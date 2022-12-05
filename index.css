@@ -1,5 +1,266 @@
 body {
+    margin: 0;
+    height: 100vh;
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 
 }
+
+.back {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 90vw;
+    border-radius: 20px;
+    margin: 15vh 5vw 15vh 5vw;
+    padding-bottom: 3vh;
+}
+
+header>h1 {
+    font-family: Pacifico;
+    font-size: 6vw;
+    color: #F3F288;
+    margin-left: 30px;
+
+}
+
+nav {
+    display: flex;
+    margin: 10px;
+}
+
+nav>div {
+    background-color: rgba(241, 234, 234, 0.659);
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    width: 22vw;
+    margin: 3px;
+}
+
+h1 {
+    font-family: Pacifico;
+    font-size: 4vw;
+    margin-bottom: 0;
+}
+
+.song_list h2 {
+    font-size: 1.2vw;
+    margin-top: 1vw;
+    padding-left: 0.8vw;
+    margin-bottom: 0;
+}
+
+
+
+.album_data {
+    grid-column: 1/span 3;
+    padding-left: 10px;
+    font-size: 1vw;
+}
+
+.over:hover {
+    background-color: rgba(29, 26, 26, 0.659);
+    color: white;
+}
+
+.marked {
+    border: 1px solid white;
+}
+
+.show_not_hover {
+    position: absolute;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    right: 0;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.show_hover {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.show_not_hover:hover {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+
+article {
+    background-color: rgba(0, 0, 0, 0.338);
+    border-radius: 20px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.848);
+    margin: 50px 20px 0 20px;
+    padding: 0.7vw;
+}
+
+.best {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.song_list li {
+    list-style: decimal;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 2vw;
+    margin-top: 0;
+}
+
+.song_list {
+    display: flex;
+    margin-right: 10px;
+    grid-column: 4/span 5;
+    width: 100%;
+}
+
+.one {
+    font-size: 1vw;
+    background-color: #0B83BF;
+    color: rgb(240, 208, 208);
+    border-radius: 0 0 0 10px;
+}
+
+.two {
+    font-size: 1vw;
+    background-color: #0B83BF;
+    color: rgb(240, 208, 208);
+    border-radius: 0 0 10px 0;
+    margin-left: 5px;
+}
+
+.cover {
+    grid-column: 4/span 5;
+    width: 100%;
+    position: relative;
+}
+
+.anecdotes {
+    grid-column: 1/ span 5;
+    display: flex;
+    flex-direction: row;
+    font-size: 1vw;
+    gap: 0.6%;
+    padding-left: 0;
+    padding: 0.7vw;
+    margin: 0;
+    height: 30vh;
+}
+
+.anecdotes li {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_right_90_1 {
+    border-radius: 15px 0 15px 15px;
+    width: 12%;
+    background-color: #93B5CE;
+    color: #0E0D0B;
+
+
+}
+
+.empty {
+    width: 15%;
+
+}
+
+.bottom_left_90_1 {
+    width: 40%;
+    background-color: #93B5CE;
+    color: #0E0D0B;
+    border-radius: 15px 15px 15px 0;
+}
+
+#vacances .top_left_90 {
+    width: 12%;
+    background-image: url("images/cosma1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #93B5CE;
+    border-radius: 0 15px 15px 15px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3vh;
+}
+
+.bottom_right_90_1 {
+    width: 12%;
+    background-color: #93B5CE;
+    color: #0E0D0B;
+    border-radius: 15px 15px 0 15px;
+
+}
+
+.tablet_empty,
+.phone_empty {
+    display: none;
+}
+
+.deux .bottom_left_90 {
+    width: 30%;
+    border-radius: 15px 15px 15px 0;
+    background-color: #78948b;
+}
+
+.deux .top_left_90 {
+    width: 12%;
+    background-color: #78948b;
+    border-radius: 0 15px 15px 15px;
+}
+
+.deux .image_2 {
+    background-image: url("images/kiss.jpg");
+    border-radius: 0 15px 15px 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 3vh;
+
+}
+
+.deux .bottom_right_90 {
+    width: 30%;
+    background-color: #78948b;
+}
+
+.två {
+    background-color: #0D8D50;
+    color: #E3DEBE;
+    width: 100%;
+}
+
+footer {
+    padding-top: 5vh;
+    padding-left: 2vh;
+    color: white;
+    font-size: 1.9vh;
+}
+
+
+/*färg till nakna mannen #223C57, #7EB0E3, #E07160, #69584E*/
+/* färg till familjen #0A64A0, #0D8D50,#BD5F46,#596561*,  #78948b/
