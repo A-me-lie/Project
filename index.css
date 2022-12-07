@@ -72,9 +72,10 @@ h1 {
 
 .show_not_hover {
     position: absolute;
+    right: 0;
     border-radius: 20px 20px 0 0;
     width: 100%;
-    right: 0;
+
     opacity: 1;
     transition-property: opacity;
     transition-duration: 1s;
@@ -216,7 +217,8 @@ ul {
 }
 
 .tablet_empty,
-.phone_empty {
+.phone_empty,
+.tablet_empty_2 {
     display: none;
 }
 
@@ -232,7 +234,7 @@ ul {
     border-radius: 0 15px 15px 15px;
 }
 
-.deux .image_2 {
+.deux .image {
     background-image: url("images/kiss.jpg");
     border-radius: 0 15px 15px 15px;
     background-repeat: no-repeat;
@@ -246,6 +248,7 @@ ul {
 .deux .bottom_right_90 {
     width: 30%;
     background-color: #78948b;
+    border-radius: 15px 15px 0 15px;
 }
 
 .två {
@@ -260,6 +263,196 @@ footer {
     color: white;
     font-size: 1.9vh;
 }
+
+@media(min-width:1111px) {
+
+    p,
+    h2,
+    ul,
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:900px) and (min-width:800px) {
+
+    p,
+    h2,
+    ul,
+    footer {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:800px) and (min-width:500px) {
+
+    header>h1 {
+        text-align: center;
+        font-size: 8vw;
+    }
+
+    .song_list h2,
+    ul {
+        font-size: 2vw;
+    }
+
+    .show_not_hover:hover {
+        opacity: 1;
+    }
+
+    .show_hover {
+        display: none;
+    }
+
+    #vacances .cover {
+        background-color: white;
+    }
+
+    .cover {
+        grid-column: 1 /span 3;
+        border-radius: 20px 0 0 20px;
+        margin-left: 1vw;
+        margin-top: 1vw;
+    }
+
+    #vacances .song_list {
+        flex-direction: column;
+        grid-column: 4/ span 5;
+        box-sizing: border-box;
+        gap: 1vh;
+        margin-left: 2vw;
+        margin-top: 1vw;
+        width: 90%;
+    }
+
+    .song_list .one {
+        border-radius: 0 20px 0 0;
+        margin-top: 0;
+        padding-bottom: 3vw;
+        padding: 5vh 2vw;
+    }
+
+    .song_list .two {
+        border-radius: 0 0 20px 0;
+        padding-bottom: 3vw;
+        margin-left: 0;
+        padding: 5vh 2vw;
+    }
+
+    .album_data {
+        grid-row: 2;
+        grid-column: 1/span 5;
+        font-size: 2vw;
+    }
+
+    .anecdotes {
+        flex-wrap: wrap;
+        font-size: 1.5vw;
+    }
+
+    .flex {
+        padding: 5vh 0;
+    }
+
+    #vacances .top_right_90_1 {
+        order: 1;
+        width: 15%;
+        margin-bottom: 0.5vh
+    }
+
+    #vacances .empty {
+        order: 2;
+        width: 15%;
+        margin-bottom: 0.5vh;
+    }
+
+    #vacances .bottom_left_90_1 {
+        order: 3;
+        width: 53%;
+        margin-bottom: 0.5vh
+    }
+
+    #vacances .tablet_empty {
+        order: 4;
+        display: inline;
+        width: 15%;
+    }
+
+    #vacances .top_left_90 {
+        order: 5;
+        width: 15%;
+    }
+
+    #vacances .bottom_right_90_1 {
+        order: 6;
+        width: 15%;
+    }
+
+    #vacances .phone_empty {
+        order: 7;
+        display: inline;
+        width: 23%;
+    }
+
+    /*la boum 2*/
+    #La_boum_2 .cover {
+        background-color: #0B83BF;
+    }
+
+    #La_boum_2 .bottom_left_90 {
+        order: 1;
+        width: 48%;
+        margin-bottom: 0.5vh;
+    }
+
+    #La_boum_2 .top_left_90 {
+        order: 2;
+        width: 17.5%;
+        margin-bottom: 0.5vh;
+    }
+
+    #La_boum_2 .tablet_empty {
+        order: 3;
+        display: inline;
+        width: 17.5%;
+    }
+
+    #La_boum_2 .tablet_empty_2 {
+        order: 4;
+        display: inline;
+        width: 17.5%;
+    }
+
+    #La_boum_2 .image {
+        order: 5;
+        width: 48%;
+    }
+
+    #La_boum_2 .bottom_right_90 {
+        order: 6;
+        width: 17.5%;
+    }
+
+    #La_boum_2 .song_list {
+        flex-direction: column;
+        grid-column: 4/ span 5;
+        box-sizing: border-box;
+        gap: 1vh;
+        margin-left: 2vw;
+        margin-top: 1vw;
+        width: 79%;
+    }
+
+    footer {
+        font-size: 1vw;
+    }
+}
+
+
+
+
+
+
 
 
 /*färg till nakna mannen #223C57, #7EB0E3, #E07160, #69584E*/
