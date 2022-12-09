@@ -84,7 +84,7 @@ article {
 .album_data {
     grid-column: 1/span 3;
     padding-left: 10px;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
 }
 
 
@@ -220,7 +220,7 @@ ul {
 
 #vacances .empty {
     width: 15%;
-
+    list-style: none;
 }
 
 #vacances .bottom_left_90 {
@@ -301,9 +301,21 @@ footer {
 
     p,
     h2,
-    ul,
+    li,
     footer {
-        font-size: 13.5px;
+        font-size: 15px;
+    }
+
+    .song_list li {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .album_data h2 {
+        font-size: 23px;
     }
 }
 
@@ -322,17 +334,37 @@ footer {
 
 @media (max-width:800px) and (min-width:501px) {
 
+
     header>h1 {
         text-align: center;
         font-size: 8vw;
+        margin-left: 0;
+
     }
 
-
-
-
-    .song_list h2,
-    ul {
+    .song_list li {
+        line-height: 17px;
         font-size: 2vw;
+    }
+
+    .song_list ul {
+        padding-left: 3.5vw;
+    }
+
+    .song_list h2 {
+        font-size: 3vw;
+    }
+
+    .song_list .one {
+        border-radius: 0 20px 0 0;
+        margin-top: 0;
+        padding: 5vw 2vw 6vw 2vw;
+    }
+
+    .song_list .two {
+        border-radius: 0 0 20px 0;
+        margin-left: 0;
+        padding: 5vw 2vw 5vw 2vw;
     }
 
     .show_not_hover:hover {
@@ -361,7 +393,8 @@ footer {
 
     #vacances .cover {
         margin-bottom: 0;
-        background-color: transparent;
+        background-color: white;
+        border-radius: 20px 0 0 20px;
     }
 
     #La_boum_2 .cover {
@@ -380,17 +413,6 @@ footer {
         width: 90%;
     }
 
-    .song_list .one {
-        border-radius: 0 20px 0 0;
-        margin-top: 0;
-        padding: 5vw 2vw 6vw 2vw;
-    }
-
-    .song_list .two {
-        border-radius: 0 0 20px 0;
-        margin-left: 0;
-        padding: 5vw 2vw 5vw 2vw;
-    }
 
     .album_data {
         grid-row: 2;
@@ -402,6 +424,10 @@ footer {
     .anecdotes {
         flex-wrap: wrap;
         padding-left: 1.9vw;
+    }
+
+    .anecdotes li {
+        line-height: 13px;
     }
 
     .flex {
@@ -500,6 +526,9 @@ footer {
     }
 }
 
+
+
+
 /*PHONE MODE*/
 
 @media(max-width:500px) {
@@ -513,8 +542,9 @@ footer {
 
     header>h1 {
         text-align: center;
-        font-size: 10vw;
+        font-size: 10.9vw;
         margin-top: 0;
+        margin-left: 0;
     }
 
     nav>div {
@@ -550,11 +580,16 @@ footer {
     }
 
     .song_list h2 {
-        font-size: 3vw;
+        font-size: 4.2vw;
     }
 
     .song_list li {
-        font-size: 3vw;
+        font-size: 2.7vw;
+        line-height: 20px;
+    }
+
+    .song_list ul {
+        margin-left: 1.9vw;
     }
 
     #vacances .song_list .one {
@@ -597,7 +632,7 @@ footer {
     .album_data {
         grid-row: 3;
         grid-column: 1/span 5;
-        font-size: 3vw;
+        font-size: 3.4vw;
     }
 
     .album_data h1 {
