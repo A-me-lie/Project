@@ -10,6 +10,7 @@ body {
 
 }
 
+/*The back och both album info*/
 .back {
     background-color: rgba(0, 0, 0, 0.4);
     width: 90vw;
@@ -19,7 +20,7 @@ body {
 }
 
 header>h1 {
-    font-family: Pacifico;
+    font-family: "Pacifico";
     font-size: 6vw;
     color: #F3F288;
     margin-left: 30px;
@@ -28,9 +29,10 @@ header>h1 {
 
 nav {
     display: flex;
-    margin: 10px;
+    margin: 1vw;
 }
 
+/*Navigation boxes*/
 nav>div {
     background-color: rgba(241, 234, 234, 0.659);
     border-radius: 5px;
@@ -40,27 +42,6 @@ nav>div {
     margin: 3px;
 }
 
-h1 {
-    font-family: Pacifico;
-    font-size: 4vw;
-    margin-bottom: 0;
-}
-
-.song_list h2 {
-    font-size: 1.2vw;
-    margin-top: 1vw;
-    padding-left: 0.8vw;
-    margin-bottom: 0;
-}
-
-
-
-.album_data {
-    grid-column: 1/span 3;
-    padding-left: 10px;
-    font-size: 1.2vw;
-}
-
 .over:hover {
     background-color: rgba(29, 26, 26, 0.659);
     color: white;
@@ -68,30 +49,27 @@ h1 {
 
 .marked {
     border: 1px solid white;
+    box-shadow: 0 0 8px white;
 }
 
-.show_not_hover {
-    position: absolute;
-    right: 0;
-    border-radius: 20px 20px 0 0;
-    width: 100%;
-
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 1s;
+h1 {
+    font-family: "Pacifico";
+    font-size: 4vw;
+    margin-bottom: 0;
 }
 
-.show_hover {
-    border-radius: 20px 20px 0 0;
-    width: 100%;
+.song_list h2 {
+    font-size: 1.7vw;
+    margin-top: 1vw;
+    padding-left: 0.8vw;
+    margin-bottom: 0;
 }
 
-.show_not_hover:hover {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 1s;
+/*Backing for each seperate albums*/
+.best {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
-
 
 article {
     background-color: rgba(0, 0, 0, 0.338);
@@ -102,46 +80,16 @@ article {
     padding: 0.7vw;
 }
 
-.best {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+
+.album_data {
+    grid-column: 1/span 3;
+    padding-left: 10px;
+    font-size: 1.2vw;
 }
 
-.song_list li {
-    list-style: decimal;
-}
 
-li {
-    list-style: none;
-}
 
-ul {
-    padding-left: 2vw;
-    margin-top: 0;
-}
-
-.song_list {
-    display: flex;
-    margin-right: 10px;
-    grid-column: 4/span 5;
-    width: 100%;
-}
-
-.one {
-    font-size: 1vw;
-    background-color: #0B83BF;
-    color: rgb(240, 208, 208);
-    border-radius: 0 0 0 10px;
-}
-
-.two {
-    font-size: 1vw;
-    background-color: #0B83BF;
-    color: rgb(240, 208, 208);
-    border-radius: 0 0 10px 0;
-    margin-left: 5px;
-}
-
+/*Album covers*/
 .cover {
     grid-column: 4/span 5;
     width: 100%;
@@ -160,6 +108,76 @@ ul {
     margin-bottom: 1vh;
 }
 
+
+/*SHARK PICTURE*/
+.show_not_hover {
+    position: absolute;
+    right: 0;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+/*BEACH PICTURE*/
+.show_hover {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.show_not_hover:hover {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.song_list li {
+    list-style: decimal;
+    font-size: 1.5vw;
+}
+
+ul {
+    padding-left: 2.7vw;
+    margin-top: 0;
+}
+
+.song_list {
+    display: flex;
+    margin-right: 10px;
+    grid-column: 4/span 5;
+    width: 100%;
+}
+
+.one {
+    font-size: 1vw;
+    background-color: #0B83BF;
+    color: rgb(240, 208, 208);
+    border-radius: 0 0 0 10px;
+}
+
+.ett {
+    padding-right: 16px;
+}
+
+/*SONG_LIST FOR VACANCES*/
+.two {
+    font-size: 1vw;
+    background-color: #0B83BF;
+    color: rgb(240, 208, 208);
+    border-radius: 0 0 10px 0;
+    margin-left: 5px;
+}
+
+/*SONG_LIST FOR LA_BOUM_2*/
+.två {
+    background-color: #0D8D50;
+    color: #E3DEBE;
+    width: 100%;
+}
+
+
 .anecdotes {
     grid-column: 1/ span 5;
     display: flex;
@@ -172,17 +190,16 @@ ul {
 
 }
 
-#La_boum_2 .anecdotes {
-    font-size: 1.2vw;
-}
-
 .anecdotes li {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 10px;
-
-
 }
+
+
+
+/*Anecdotes WEB MODE*/
+
 
 .flex {
     display: flex;
@@ -190,21 +207,23 @@ ul {
     justify-content: center;
 }
 
-.top_right_90_1 {
+/*LES SOUS DOUES EN VACANCES*/
+#vacances .top_right_90 {
     border-radius: 15px 0 15px 15px;
     width: 12%;
     background-color: #93B5CE;
     color: #0E0D0B;
+    padding-bottom: 20px;
 
 
 }
 
-.empty {
+#vacances .empty {
     width: 15%;
 
 }
 
-.bottom_left_90_1 {
+#vacances .bottom_left_90 {
     width: 40%;
     background-color: #93B5CE;
     color: #0E0D0B;
@@ -224,7 +243,8 @@ ul {
     padding-bottom: 3vh;
 }
 
-.bottom_right_90_1 {
+
+#vacances .bottom_right_90 {
     width: 12%;
     background-color: #93B5CE;
     color: #0E0D0B;
@@ -238,19 +258,21 @@ ul {
     display: none;
 }
 
-.deux .bottom_left_90 {
+/*LA BOUM 2*/
+#La_boum_2 .bottom_left_90 {
     width: 30%;
     border-radius: 15px 15px 15px 0;
     background-color: #78948b;
 }
 
-.deux .top_left_90 {
+#La_boum_2 .top_left_90 {
     width: 12%;
     background-color: #78948b;
     border-radius: 0 15px 15px 15px;
+    padding-bottom: 20px;
 }
 
-.deux .image {
+#La_boum_2 .image {
     background-image: url("images/kiss.jpg");
     border-radius: 0 15px 15px 15px;
     background-repeat: no-repeat;
@@ -261,17 +283,12 @@ ul {
 
 }
 
-.deux .bottom_right_90 {
+#La_boum_2 .bottom_right_90 {
     width: 30%;
     background-color: #78948b;
     border-radius: 15px 15px 0 15px;
 }
 
-.två {
-    background-color: #0D8D50;
-    color: #E3DEBE;
-    width: 100%;
-}
 
 footer {
     padding-top: 5vh;
@@ -303,37 +320,54 @@ footer {
 
 /*TABLET MODE*/
 
-@media (min-width:501px) and (max-width:800px) {
+@media (max-width:800px) and (min-width:501px) {
 
     header>h1 {
         text-align: center;
         font-size: 8vw;
     }
 
+
+
+
     .song_list h2,
     ul {
-        font-size: 2vh;
+        font-size: 2vw;
     }
 
     .show_not_hover:hover {
         opacity: 1;
     }
 
+    .show_not_hover {
+        border-radius: 20px 0 0 20px;
+    }
+
     .show_hover {
         display: none;
     }
 
-    #vacances .cover {
+    /* #vacances .cover {
         background-color: white;
         margin-bottom: 0;
-    }
+    }*/
 
     .cover {
         grid-column: 1 /span 3;
-        border-radius: 20px 0 0 20px;
         margin-left: 1vw;
         margin-top: 1vw;
+        border-radius: 20px 0 0 20px;
+    }
 
+    #vacances .cover {
+        margin-bottom: 0;
+        background-color: transparent;
+    }
+
+    #La_boum_2 .cover {
+        margin-bottom: 0;
+        background-color: #0B83BF;
+        border-radius: 20px 0 0 20px;
     }
 
     #vacances .song_list {
@@ -349,26 +383,25 @@ footer {
     .song_list .one {
         border-radius: 0 20px 0 0;
         margin-top: 0;
-        padding-bottom: 3vw;
-        padding: 5vh 2vw;
+        padding: 5vw 2vw 6vw 2vw;
     }
 
     .song_list .two {
         border-radius: 0 0 20px 0;
-        padding-bottom: 3vw;
         margin-left: 0;
-        padding: 5vh 2vw;
+        padding: 5vw 2vw 5vw 2vw;
     }
 
     .album_data {
         grid-row: 2;
         grid-column: 1/span 5;
         font-size: 2vw;
+        margin-top: 6vh;
     }
 
     .anecdotes {
         flex-wrap: wrap;
-        font-size: 1.5vw;
+        padding-left: 1.9vw;
     }
 
     .flex {
@@ -376,7 +409,7 @@ footer {
     }
 
     /*Les sous doués en vacances*/
-    #vacances .top_right_90_1 {
+    #vacances .top_right_90 {
         order: 1;
         width: 15%;
         margin-bottom: 0.5vh
@@ -388,7 +421,7 @@ footer {
         margin-bottom: 0.5vh;
     }
 
-    #vacances .bottom_left_90_1 {
+    #vacances .bottom_left_90 {
         order: 3;
         width: 46%;
         margin-bottom: 0.5vh
@@ -405,7 +438,7 @@ footer {
         width: 15%;
     }
 
-    #vacances .bottom_right_90_1 {
+    #vacances .bottom_right_90 {
         order: 6;
         width: 15%;
     }
@@ -417,10 +450,6 @@ footer {
     }
 
     /*la boum 2*/
-    #La_boum_2 .cover {
-        background-color: #0B83BF;
-        margin-bottom: 0;
-    }
 
     #La_boum_2 .bottom_left_90 {
         order: 1;
@@ -467,7 +496,7 @@ footer {
     }
 
     footer {
-        font-size: 1vw;
+        font-size: 1.8vw;
     }
 }
 
@@ -489,7 +518,8 @@ footer {
     }
 
     nav>div {
-        padding: 11px;
+        padding: 1.7vw;
+        margin: 3px;
     }
 
     article {
@@ -514,14 +544,21 @@ footer {
         margin-right: 1vw;
     }
 
+    .song_list {
+        flex-direction: row;
+        grid-column: 1/ span 5;
+    }
+
     .song_list h2 {
         font-size: 3vw;
     }
 
-    .song_list {
-        flex-direction: row;
-        grid-column: 1/ span 5;
-        font-size: 4vw;
+    .song_list li {
+        font-size: 3vw;
+    }
+
+    #vacances .song_list .one {
+        padding-right: 7vw;
     }
 
     .show_not_hover:hover {
@@ -529,25 +566,32 @@ footer {
     }
 
     .show_hover {
-        width: 98.2%;
-        margin: 1vw;
-        margin-left: 0.9vw;
+        opacity: 0;
+
     }
 
     .show_not_hover {
-        display: none;
+        width: 98%;
+        margin: 1vw;
+        margin-left: 0.9vw;
     }
 
     .anecdotes {
         flex-wrap: wrap;
         height: 48vh;
         font-size: 2.5vw;
+        padding-left: 1.9vw;
     }
 
     .cover {
         grid-column: 1 /span 5;
         border-radius: 20px 0 0 20px;
 
+    }
+
+    #La_boum_2 .cover,
+    #vacances .cover {
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .album_data {
@@ -566,13 +610,13 @@ footer {
     }
 
     /*anecdotes vacances*/
-    #vacances .top_right_90_1 {
+    #vacances .top_right_90 {
         order: 1;
         width: 25%;
         padding-bottom: 0;
     }
 
-    #vacances .bottom_left_90_1 {
+    #vacances .bottom_left_90 {
         order: 2;
         width: 56%;
         margin-bottom: 0.4vh;
@@ -590,7 +634,7 @@ footer {
         width: 24%;
     }
 
-    #vacances .bottom_right_90_1 {
+    #vacances .bottom_right_90 {
         order: 5;
         width: 25%;
         margin-left: 0.4vw;
@@ -622,6 +666,9 @@ footer {
 
     }
 
+    footer {
+        font-size: 1.8vw;
+    }
 }
 
 
